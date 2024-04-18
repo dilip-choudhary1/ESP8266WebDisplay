@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESP8266 Data Display</title>
+    <meta http-equiv="refresh" content="5">
+</head>
+<body>
+    <h1>ESP8266 Data Display</h1>
+    <h2>Recent Data:</h2>
+    <pre>
+        <?php
+        echo file_get_contents("data.txt");
+        ?>
+    </pre>
+</body>
+</html>
