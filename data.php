@@ -19,4 +19,10 @@ if (isset($_POST['distance']) && isset($_POST['timestamp'])) {
     // Send an error response
     echo "Error: Parameters missing.";
 }
+
+curl -X POST \
+  https://your-server-url/data.php \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d 'distance=10&timestamp=2022-05-01%2012:00:00'
+
 ?>
