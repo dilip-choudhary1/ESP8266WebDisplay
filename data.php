@@ -1,4 +1,8 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 // Check if the distance and timestamp parameters are set
 if (isset($_POST['distance']) && isset($_POST['timestamp'])) {
     // Get the distance and timestamp values
